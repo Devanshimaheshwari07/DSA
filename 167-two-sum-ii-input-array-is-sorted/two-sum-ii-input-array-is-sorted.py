@@ -12,5 +12,5 @@ class Solution(object):
                 r-=1
             else:
                 l+=1
-        return [l,r]
+        
         
