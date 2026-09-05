@@ -1,11 +1,10 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-        freq={}
-
-        for i in nums:
-            if i in freq:
+        seen=set()
+        for num in nums:
+            if num in seen:
                 return True
-            freq[i]=1
-
+            seen.add(num)
         return False
+
         
